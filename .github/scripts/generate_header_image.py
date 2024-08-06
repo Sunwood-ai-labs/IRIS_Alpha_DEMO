@@ -29,7 +29,7 @@ if __name__ == "__main__":
     settings = get_settings()
     tag = os.environ.get('LATEST_TAG', 'v1.0.0')
     # font_name = os.environ.get('HEADER_FONT', 'Times New Roman')
-    font_name = r".github\release_notes\fonts\HigherJump-8MZ7M.ttf"
+    font_name = ".github/release_notes/fonts/HigherJump-8MZ7M.ttf"
     logger.info(f"使用するタグ: {tag}")
     logger.info(f"使用するフォント: {font_name}")
     
