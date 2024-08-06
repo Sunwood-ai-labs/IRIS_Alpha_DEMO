@@ -66,5 +66,4 @@ Please translate the following Japanese README into English:
     logger.info("READMEの英訳プロセスが正常に完了しました。")
 
 if __name__ == "__main__":
-    logger.add("readme_translation.log", rotation="1 day", retention="7 days")
     main()

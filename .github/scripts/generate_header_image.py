@@ -23,7 +23,7 @@ def generate_header_image(tag: str, output_dir: str, font_name: str):
     logger.success(f"最新版ヘッダー画像を生成しました: {latest_output_path}")
 
 if __name__ == "__main__":
-    logger.add("header_image_generation.log", rotation="1 MB", compression="zip")
+   
     logger.info("画像生成スクリプトを開始します。")
     
     settings = get_settings()
