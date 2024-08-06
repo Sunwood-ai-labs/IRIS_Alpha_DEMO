@@ -20,7 +20,7 @@ env:
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   GITHUB_REPOSITORY: ${{ github.repository }}
   RELEASE_NOTES_DIR: ${{ github.workspace }}/.github/release_notes
-  HEADER_FONT: "Times New Roman"
+  HEADER_FONT: "DejaVu Math TeX Gyre"
   YOUR_PERSONAL_ACCESS_TOKEN_IRIS: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_IRIS }}
 
 jobs:
