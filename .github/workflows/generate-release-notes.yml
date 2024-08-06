@@ -1,0 +1,97 @@
+name: 自動GitHubリリースノート生成
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+env:
+  GITHUB_TOKEN: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_IRIS}}
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  GITHUB_REPOSITORY: ${{ github.repository }}
+  RELEASE_NOTES_DIR: ${{ github.workspace }}/.github/release_notes
+  HEADER_FONT: "Times New Roman"
+  YOUR_PERSONAL_ACCESS_TOKEN_IRIS: ${{ secrets.YOUR_PERSONAL_ACCESS_TOKEN_IRIS }}
+
+jobs:
+  generate-release-notes:
+    runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'pull_request' && github.event.pull_request.merged == true && startsWith(github.head_ref, 'release/')) ||
+      (github.event_name == 'push' && startsWith(github.ref, 'refs/tags/'))
+    steps:
+      - name: リポジトリのチェックアウト
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: タグの強制更新
+        run: |
+          git fetch --tags --force
+          git fetch origin main --force
+          git checkout main
+          git pull origin main
+
+      - name: 最新のタグを取得
+        id: get_tag
+        run: |
+          LATEST_TAG=$(git describe --tags --abbrev=0)
+          echo "LATEST_TAG=${LATEST_TAG}" >> $GITHUB_OUTPUT
+
+      - name: Python のセットアップ
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+
+      - name: 依存関係のインストール
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r .github/requirements.txt
+          pip install Pillow loguru matplotlib
+
+      - name: アセットディレクトリの確認
+        run: |
+          mkdir -p .github/release_notes/assets
+          ls -la .github/release_notes/assets
+
+          mkdir -p .github/release_notes/header_image
+          ls -la .github/release_notes/header_image
+          
+      - name: SourceSage の実行
+        run: |
+          sourcesage --ignore-file=".github/repository_summary/.iris.SourceSageignore"
+
+      - name: ヘッダー画像の生成
+        id: generate_header
+        run: |
+          python .github/scripts/generate_header_image.py
+        env:
+          LATEST_TAG: ${{ steps.get_tag.outputs.LATEST_TAG }}
+          
+  
+      - name: ヘッダー画像のコミットとプッシュ
+        run: |
+          git config --global user.name "iris-s-coon"
+          git config --global user.email "iris.sol.coon@gmail.com"
+          git add .github/release_notes/header_image/release_header_${{ steps.get_tag.outputs.LATEST_TAG }}.png
+          git add .github/release_notes/header_image/release_header_latest.png
+          git commit -m "Add release header images for ${{ steps.get_tag.outputs.LATEST_TAG }}"
+          git push
+
+      - name: GitHubリリースノートの生成
+        env:
+          LATEST_TAG: ${{ steps.get_tag.outputs.LATEST_TAG }}
+          # HEADER_IMAGE_URL: "https://raw.githubusercontent.com/${{ github.repository }}/main/.github/release_notes/header_image/release_header_${{ steps.get_tag.outputs.LATEST_TAG }}.png"
+        run: |
+          python .github/scripts/generate_github_release_notes.py
