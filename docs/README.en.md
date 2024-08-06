@@ -1,113 +1,109 @@
-# IRIS_Alpha_DEMO
+# Project: IRIS_Alpha_DEMO
 
-[![Release](https://raw.githubusercontent.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/main/.github/release_notes/header_image/release_header_latest.png)](https://raw.githubusercontent.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/main/.github/release_notes/header_image/release_header_latest.png)
+## IRIS Release Notes - Version v2.1.0
 
-# Latest Release Notes:
-
-## IRIS Release Notes - Version v1.1.0
-
-Release Date: 2024-08-06
+Release Date: 2024-08-07
 
 ## New Features
 
-- Added Fibonacci sequence generation functionality.
-    - `fibonacci(n)` function to return a Fibonacci sequence of a specified number.
-    - `fibonacci_recursive(n)` function using a recursive approach.
-    - `is_fibonacci(num)` function to determine if a given number is included in the Fibonacci sequence.
-- Added examples of Fibonacci sequence generator usage.
-    - Examples demonstrating the use of `fibonacci(n)`, `fibonacci_recursive(n)`, and `is_fibonacci(num)` functions can be found in `examples/fibonacci_examples.py`.
+- **Fibonacci Sequence Game:** An interactive game designed to teach users about the Fibonacci sequence in a fun way. (#98ff204)
+    - Features a Fibonacci quiz.
+    - Allows users to check if a number belongs to the Fibonacci sequence.
+    - Enables finding the nearest Fibonacci number to a given input. 
+- **Tests for Fibonacci Sequence Game:** Ensures the game functions as intended. (#986a892)
 
 ## Changes
 
-- Fixed the header font family when generating release notes.
-    - Previously, "Times New Roman" was used, but there was a problem that it was not displayed correctly in some environments.
-    - By using "DejaVu Math TeX Gyre" from now on, display compatibility in many environments has been improved.
-- Removed unnecessary log output.
-    - Removed unnecessary log output settings from `translate_readme.py` and `generate_header_image.py`.
+- **Improved README Auto-Update Accuracy:** Enhanced the precision of automatic README updates. (#ba47ee3)
+    - Introduced update guidelines for the LLM prompt during the auto-update process.
+    - This aims to generate a more accurate and current README.
+- **Updated English README:** Made revisions to the English README file. (#10cbb4a, #a720325)
+- **Updated Header Images:** Refreshed the header images.
+
+## Fixes
+
+- **Header Font Family in Release Notes:** Fixed an issue with the header font family when generating release notes. (#f60687d)
+    - "Times New Roman" was previously used but encountered display problems in certain environments.
+    - Switched to "DejaVu Math TeX Gyre" to improve display compatibility across various environments.
+- **Removed Unnecessary Log Output:** Eliminated redundant log output settings. (#f60687d)
+    - Removed these settings from `translate_readme.py` and `generate_header_image.py`.
 
 ---
 
-# Repository Summary:
-# Project: IRIS_Alpha_DEMO
+# Fibonacci Fun
 
-```
-OS: posix
-Directory: /home/runner/work/IRIS_Alpha_DEMO/IRIS_Alpha_DEMO
+This repository hosts an interactive Python project that makes learning about the Fibonacci sequence enjoyable.
 
-├─ examples/
-│  ├─ fibonacci_examples.py
-├─ fibonacci.py
-├─ issue_creator.log
-├─ README.md
-```
+The Fibonacci sequence is a series of numbers where each number is calculated by adding the two numbers before it. The sequence begins with 0 and 1.
 
-## .
+This project provides a variety of functions and a game to help you explore the Fibonacci sequence.
 
-`fibonacci.py`
+## Features
 
-```python
-def fibonacci(n):
-    if n <= 0:
-        return []
-    elif n == 1:
-        return [0]
-    elif n == 2:
-        return [0, 1]
-    
-    fib = [0, 1]
-    for _ in range(2, n):
-        fib.append(fib[-1] + fib[-2])
-    return fib
+- **Generate Fibonacci numbers:** Generate a list containing the first N Fibonacci numbers.
+- **Check Fibonacci membership:** Determine whether a given number is a Fibonacci number.
+- **Find nearest Fibonacci:** Identify the Fibonacci number closest to a provided number.
+- **Interactive Fibonacci Game:** Put your knowledge to the test and learn more about the Fibonacci sequence through an engaging game!
 
-def fibonacci_recursive(n):
-    if n <= 0:
-        return []
-    elif n == 1:
-        return [0]
-    elif n == 2:
-        return [0, 1]
-    
-    fib = fibonacci_recursive(n - 1)
-    fib.append(fib[-1] + fib[-2])
-    return fib
+## Getting Started
 
-def is_fibonacci(num):
-    a, b = 0, 1
-    while b < num:
-        a, b = b, a + b
-    return b == num
-```
+### Prerequisites
 
-`issue_creator.log`
+- Python 3.6 or a later version
 
-```
-```
+### Installation
 
-`README.md`
+1. Clone the repository:
 
-```markdown
-# IRIS_Alpha_DEMO
-```
+   ```bash
+   git clone https://github.com/your-username/fibonacci-fun.git
+   ```
 
-## .github
+2. Navigate to the project directory:
 
-`.github/labels.csv`
+   ```bash
+   cd fibonacci-fun
+   ```
 
-```
-label,description
-bug,Something isn't working
-documentation,Improvements or additions to documentation
-duplicate,This issue or pull request already exists
-enhancement,New feature or request
-feature,New feature or request
-good first issue,Good for newcomers
-help wanted,Extra attention is needed
-invalid,This doesn't seem right
-question,Further information is requested
-wontfix,This will not be worked on
-```
+### Usage
 
----
+1. **Import the functions:**
 
-<!-- Automated update --># Last updated: Tue Aug  6 11:29:15 UTC 2024 - Release: v1.1.0 - Run ID: 10265646027
+   ```python
+   from fibonacci import fibonacci, is_fibonacci, find_nearest_fibonacci
+   ```
+
+2. **Use the functions:**
+
+   ```python
+   # Generate the first 10 Fibonacci numbers
+   fib_numbers = fibonacci(10) 
+   print(fib_numbers)  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+   # Check if a number is a Fibonacci number
+   is_fib = is_fibonacci(13) 
+   print(is_fib)  # Output: True
+
+   # Find the nearest Fibonacci number
+   nearest_fib = find_nearest_fibonacci(12)
+   print(nearest_fib)  # Output: 13
+   ```
+
+3. **Play the Fibonacci Game:**
+
+   ```bash
+   python fibonacci_game.py
+   ```
+
+   Follow the on-screen instructions to play the game.
+
+## Contributing
+
+We welcome contributions! Please feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. For more details, please refer to the LICENSE file.
+
+# Last updated: Tue Aug  6 11:42:25 UTC 2024 - Release: v2.1.0 - Run ID: 10265829843
 <!-- Automated update -->
