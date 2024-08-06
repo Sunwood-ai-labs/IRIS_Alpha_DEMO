@@ -46,16 +46,28 @@ class ImageService:
         if (font_name, font_size) in self.font_cache:
             return self.font_cache[(font_name, font_size)]
         
-        # カスタムフォントを探す
-        custom_font_path = os.path.join(self.settings.RELEASE_NOTES_DIR, 'assets', f"{font_name}.ttf")
-        if os.path.exists(custom_font_path):
+        # 指定されたフォントファイルを探す
+        if os.path.exists(font_name):
             try:
-                font = ImageFont.truetype(custom_font_path, font_size)
-                logger.success(f"カスタムフォント '{font_name}' を読み込みました。")
+                font = ImageFont.truetype(font_name, font_size)
+                logger.success(f"指定されたフォントファイル '{font_name}' を読み込みました。")
                 self.font_cache[(font_name, font_size)] = font
                 return font
             except OSError:
-                logger.warning(f"カスタムフォント '{font_name}' の読み込みに失敗しました。")
+                logger.warning(f"指定されたフォントファイル '{font_name}' の読み込みに失敗しました。")
+        
+        # assets ディレクトリ内でフォントを探す
+        font_extensions = ['.otf', '.ttf']
+        for ext in font_extensions:
+            custom_font_path = os.path.join(self.settings.RELEASE_NOTES_DIR, 'assets', font_name + ext)
+            if os.path.exists(custom_font_path):
+                try:
+                    font = ImageFont.truetype(custom_font_path, font_size)
+                    logger.success(f"カスタムフォント '{custom_font_path}' を読み込みました。")
+                    self.font_cache[(font_name, font_size)] = font
+                    return font
+                except OSError:
+                    logger.warning(f"カスタムフォント '{custom_font_path}' の読み込みに失敗しました。")
         
         # システムフォントを探す
         try:
@@ -106,6 +118,8 @@ class ImageService:
         bbox = font.getbbox(tag)
         text_width = bbox[2] - bbox[0]
         text_height = bbox[3] - bbox[1]
+        
+        # テキストを画像の中央に配置
         position = ((img.width - text_width) / 2, (img.height - text_height) / 2)
         
         logger.info("画像にテキストを描画中...")
