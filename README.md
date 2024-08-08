@@ -1,23 +1,3 @@
-# 🚀 IRIS v7.2.0 リリースノート
-
-## 📋 概要
-
-IRIS v7.2.0 は、ドキュメントの改善とコードの整理に焦点を当てたリリースです。このバージョンでは、英語のREADMEの内容を大幅に改善し、ユーザーエクスペリエンスを向上させました。さらに、翻訳ワークフローを調整し、翻訳の実行者を明確化することで、ワークフローの透明性を高めました。
-
-## 🛠 改善点
-
-- 🚀 **英語READMEの内容を大幅に改善** (commit: cc18558)
-- 🚀 **翻訳ワークフローの実行者の情報を修正** (commit: 26c3051)
-
-## 👏 謝辞
-
-このリリースへの貢献に感謝します。
-
-- iris-s-coon 
-- Maki
-
----
-
 # 🚀 IRIS_Alpha_DEMO
 
 ![Project Logo](https://raw.githubusercontent.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/main/docs/release_notes/header_image/release_header_latest.png)
