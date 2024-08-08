@@ -44,7 +44,7 @@ def main():
 以下の情報を元に、READMEを更新してください：
 
 # 更新のガイドライン:
-
+<Update guidelines>
 1. リポジトリの目的、主要機能、使用方法、インストール手順など、ユーザーにとって重要な情報を簡潔に記載してください。
 2. 最新のリリースで追加された主要な機能や重要な変更点のみをREADME内の適切な位置に簡潔に記載してください。詳細な更新情報は不要です。
 3. 既存の構造を維持しつつ、必要な箇所のみを更新してください。
@@ -62,20 +62,22 @@ def main():
 9. リポジトリ中身を深く観察し存在しないファイルへのパスは記載しないで
 10. READMEの上にリリースノートを付けるような形式ではなく、READMEの中身の各章を更新する形式で更新してください。
 更新されたREADMEの全文をそのまま出力してください。
-
----
+</Update guidelines>
 
 # 最新のリリース情報:
+<Latest release information>
 バージョン: {latest_release.title}
 主な変更点:
 {latest_release.body}
-
----
+</Latest release information>
 
 # リポジトリのサマリー:
+<Repository summary>
 {repo_summary_content}
+</Repository summary>
 
----
+
+
     """
 
     logger.info("LLMに更新を依頼しています...")
