@@ -1,48 +1,82 @@
-## Project: IRIS_Alpha_DEMO
+# IRIS_Alpha_DEMO
 
-This repository is an interactive Python project that deals with image analysis, natural language processing, and the Fibonacci sequence.
+![Project Logo](https://raw.githubusercontent.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/main/docs/release_notes/header_image/release_header_latest.png)
 
-## Main Features
+IRIS_Alpha_DEMO is an innovative Python project that blends image analysis, natural language processing, and the concept of the Fibonacci sequence. It combines mathematical beauty with practical applications, offering users a unique experience.
 
-- **Image Golden Ratio Analysis:** Loads an image, draws dividing lines based on the golden ratio, and analyzes whether the main subject aligns with the golden ratio.
-- **Fibonacci Sequence Calculation:** Calculates the Fibonacci sequence up to a given term.
-- **Fibonacci Number Check:** Determines whether a given number is part of the Fibonacci sequence.
-- **Fibonacci Quiz:** Presents a quiz about the Fibonacci sequence.
-- **Closest Fibonacci Number Search:** Finds the Fibonacci number closest to a given number.
-- **Fibonacci Spiral Drawing:** Draws a Fibonacci spiral on a graph.
-- **Fibonacci Word Exploration:** Generates Fibonacci words and displays their properties.
+[![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-6.0.0-green.svg)](https://github.com/yourusername/IRIS_Alpha_DEMO/releases)
 
-## Usage
+## 🌟 Key Features
 
-1. Clone the repository.
-2. Run `python fibonacci_game.py`.
-3. Follow the on-screen instructions to select a game.
-4. To use the image analysis feature, run `examples/image_golden_ratio_analyzer.py` and specify the image path.
+- 🖼️ **Golden Ratio Analysis of Images:** Analyzes images and provides an assessment of their composition based on the golden ratio.
+- 🔢 **Fibonacci Sequence Calculation and Exploration:** Generates the sequence, determines if a specific number is part of it, and finds the closest value.
+- 🧠 **Interactive Fibonacci Quiz:** Enables users to learn about the Fibonacci sequence in a fun way.
+- 🌀 **Visualization of the Fibonacci Spiral:** Displays the beautiful mathematical pattern graphically.
+- 📚 **Generation of Fibonacci Words:** Explores interesting linguistic patterns.
 
-## Installation Instructions
+## 🚀 Getting Started
 
-1. Install Python 3.9.
-2. Install the necessary libraries: `pip install -r requirements.txt`
+### Prerequisites
 
-## Updates
+- Python 3.9
+- pip (Python package manager)
 
-- 🎉 **S3 File Upload:** Added the ability to upload files to S3. You can specify AWS credentials, bucket name, and file path to upload files to S3. Upon successful upload, you will receive the file URL on S3.
-- 🎉 **GitHub CDN Service:** Added the ability to upload files to GitHub CDN. You can obtain the repository ID, release ID, and file path to upload files using the GitHub API. Upon successful upload, you will receive the file URL on CDN.
-- 🎉 **S3 Bucket Public Settings:** Added settings to publish the header image of a private repository on S3. By setting a public read policy on the S3 bucket and disabling the public access block, you can make the files in the S3 bucket publicly accessible.
+### Installation
 
-## Important Changes
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/IRIS_Alpha_DEMO.git
+   ```
 
-- 🔥 **Release Notes Auto-Generation Feature Removed:** The release notes auto-generation feature has been removed in this version.
-- 🗑️ **S3 Upload Processing Removed:** The S3 upload processing has been removed due to the removal of the release notes auto-generation feature.
-- 🗑️ **GitHub CDN Upload Processing Removed:** The GitHub CDN upload processing has been removed due to the removal of the release notes auto-generation feature.
-- 🗑️ **S3 Public Setting Processing Removed:** The S3 public setting processing has been removed due to the removal of the release notes auto-generation feature.
+2. Navigate to the project directory:
+   ```
+   cd IRIS_Alpha_DEMO
+   ```
 
-## Documentation
+3. Install the required libraries:
+   ```
+   pip install -r requirements.txt
+   ```
 
-- 📚 [S3 File Upload Documentation](URL)
-- 📚 [GitHub CDN Service Documentation](URL)
-- 📚 [S3 Bucket Public Settings Documentation](URL)
+### Usage
 
-## License
+1. Run the main program:
+   ```
+   python fibonacci_game.py
+   ```
 
-This project is distributed under the MIT license. For more information, see the LICENSE file.
+2. Follow the on-screen instructions to choose your desired game or tool.
+
+3. To use the image analysis feature:
+   ```
+   python examples/image_golden_ratio_analyzer.py
+   ```
+   Enter the image path when prompted.
+
+## 📘 Documentation
+
+Detailed documentation is available on the [Wiki page](https://github.com/yourusername/IRIS_Alpha_DEMO/wiki).
+
+## 🛠️ Development
+
+For those interested in contributing to the project, please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## 📅 What's New
+
+### v6.0.0 (August 12, 2024)
+- Improved the header image generation script for release notes
+- Made the font path specification more flexible
+- Other minor fixes and improvements
+
+All update history can be found in [releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases).
+
+## 📄 License
+
+This project is released under the MIT license. See the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributors
+
+Thanks to all contributors who made this project possible.
+```
