@@ -70,7 +70,7 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 - フォントパスの指定方法を柔軟に変更
 - その他の細かな修正と改善
 
-全ての更新履歴は[CHANGELOG.md](CHANGELOG.md)で確認できます。
+全ての更新履歴は[releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)で確認できます。
 
 ## 📄 ライセンス
 
@@ -80,12 +80,3 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 このプロジェクトを可能にしてくれた全ての貢献者に感謝します。
 
-[![Contributors](https://contrib.rocks/image?repo=yourusername/IRIS_Alpha_DEMO)](https://github.com/yourusername/IRIS_Alpha_DEMO/graphs/contributors)
-
-## 📞 お問い合わせ
-
-質問や提案がある場合は、[Issuesページ](https://github.com/yourusername/IRIS_Alpha_DEMO/issues)で新しいIssueを作成してください。
-
----
-
-Made with ❤️ by [Your Name/Organization]
