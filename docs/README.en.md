@@ -1,30 +1,37 @@
-## 🚀 IRIS v7.3.0 Release Notes
+## 🚀 IRIS v8.1.0 Release Notes
 
 ## 📋 Overview
 
-IRIS v7.3.0 is a release focused on documentation improvements and code organization. This version significantly enhances the content of the English README, improving the user experience. Furthermore, the translation workflow has been adjusted to increase transparency by clarifying the translation contributors.
+IRIS v8.1.0 is a release focused on enhancing image analysis and color palette extraction capabilities. This version introduces the ability to automatically extract color palettes from the header image of the release notes, making the release notes more visually appealing. Additionally, improvements to the header image generation script, including smoother region detection and optimized text placement, contribute to a more refined image generation process.
 
 ## ✨ New Features
-- 🎉  None
+
+- 🎉 Added functionality to automatically extract color palettes from the header image. (commit: 05345ca)
+- 🎉 Improved header image generation script by introducing smoother region detection and optimizing text placement. (commit: b0a12be)
 
 ## 🛠 Improvements
-- 🚀 **Substantially improved the content of the English README** (commit: cc18558)
-- 🚀 **Updated the translation workflow contributor information** (commit: 26c3051)
+
+- 🚀 Enhanced image processing and color analysis capabilities, refining the `generate_header_image` method to automatically select the optimal text placement and color scheme. (commit: 5d0e1d6)
+- 🚀 Introduced color space visualization features. (commit: 5d0e1d6)
+- 🚀 Added `use_smooth_area` and `target_ratio` parameters to the `generate_header_image` method for greater image processing flexibility. (commit: b0a12be)
 
 ## 🐛 Bug Fixes
-- 🐛  None
+
+- 🐛 None
 
 ## ⚠️ Important Changes
-- ⚠️  None
+
+- ⚠️ None
 
 ## 📦 Upgrade Instructions
-- No upgrade steps are required.
+
+- No upgrade steps required.
 
 ## 👏 Acknowledgements
 
-We appreciate the contributions to this release:
+Thanks to the following contributors for their efforts in this release:
 
-- iris-s-coon
+- iris-s-coon 
 - Maki
 
 ---
@@ -33,19 +40,19 @@ We appreciate the contributions to this release:
 
 ![Project Logo](https://raw.githubusercontent.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/main/docs/release_notes/header_image/release_header_latest.png)
 
-IRIS_Alpha_DEMO is an innovative Python project that combines image analysis, natural language processing, and the concept of the Fibonacci sequence. Blending mathematical beauty with practical application, it provides users with a unique experience.
+IRIS_Alpha_DEMO is an innovative Python project that merges image analysis, natural language processing, and the concept of the Fibonacci sequence. Combining mathematical beauty with practical applications, it offers users a unique experience.
 
 [![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-7.3.0-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
+[![Version](https://img.shields.io/badge/version-8.1.0-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
 
 ## 🌟 Key Features
 
-- 🖼️ **Golden Ratio Analysis of Images:** Analyzes images to evaluate their composition based on the golden ratio.
-- 🔢 **Fibonacci Sequence Calculation and Exploration:** Generates the sequence, determines specific numbers, and finds the nearest values.
-- 🧠 **Interactive Fibonacci Quiz:** Learn about the sequence in a fun and engaging way.
-- 🌀 **Visualization of the Fibonacci Spiral:** Visually represents the beautiful mathematical pattern.
-- 📚 **Generation of Fibonacci Words:** Explore interesting linguistic patterns.
+- 🖼️ **Image Golden Ratio Analysis:** Analyzes images and evaluates their composition based on the Golden Ratio.
+- 🔢 **Fibonacci Sequence Calculation and Exploration:** Generates the sequence, determines if a specific number is a Fibonacci number, and finds the nearest Fibonacci number.
+- 🧠 **Interactive Fibonacci Quiz:** Learn about the Fibonacci sequence through an engaging quiz.
+- 🌀 **Fibonacci Spiral Visualization:** Visually represents this beautiful mathematical pattern.
+- 📚 **Fibonacci Word Generation:** Explore interesting linguistic patterns.
 
 ## 🚀 Getting Started
 
@@ -78,9 +85,9 @@ IRIS_Alpha_DEMO is an innovative Python project that combines image analysis, na
    python fibonacci_game.py
    ```
 
-2. Follow the on-screen instructions to choose the desired game or tool.
+2. Follow the on-screen instructions to select the desired game or tool.
 
-3. To use the image analysis feature:
+3. For image analysis features:
    ```
    python examples/image_golden_ratio_analyzer.py
    ```
@@ -92,17 +99,18 @@ Detailed documentation can be found on the [Wiki page](https://github.com/Sunwoo
 
 ## 🛠️ Development
 
-For those interested in contributing to the project, please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
+Interested in contributing to the project? Check out [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 🆕 What's New
 
-All update logs are available in the [releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases).
+All updates can be found on the [releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases) page.
 
 ## 📄 License
 
-This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributors
 
-Thank you to all contributors who made this project possible.
+We are grateful to all contributors who made this project possible. 
+```
 ```
