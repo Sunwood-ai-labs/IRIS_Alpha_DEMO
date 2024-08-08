@@ -1,5 +1,4 @@
-
-# IRIS_Alpha_DEMO
+# 🚀 IRIS_Alpha_DEMO
 
 ![Project Logo](https://raw.githubusercontent.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/main/docs/release_notes/header_image/release_header_latest.png)
 
@@ -7,7 +6,7 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 [![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-7.1.0-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
+[![Version](https://img.shields.io/badge/version-7.2.0-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
 
 ## 🌟 主な機能
 
@@ -19,12 +18,12 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 ## 🚀 はじめ方
 
-### 前提条件
+### 📦 前提条件
 
 - Python 3.9
 - pip (Pythonパッケージマネージャー)
 
-### インストール
+### 📦 インストール
 
 1. リポジトリをクローンします：
    ```
@@ -41,7 +40,7 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
    pip install -r requirements.txt
    ```
 
-### 使用方法
+## 🔧 使用方法
 
 1. メインプログラムを実行します：
    ```
@@ -64,13 +63,7 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 プロジェクトへの貢献に興味がある方は、[CONTRIBUTING.md](CONTRIBUTING.md)をご覧ください。
 
-## 📅 最新情報
-
-### v7.1.0 (2024年8月12日)
-- READMEの構造と内容を大幅に改善
-- リリースノートの自動生成機能を削除
-- READMEの自動更新処理を一時的に無効化
-- その他の細かな修正と改善
+## 🆕 最新情報
 
 全ての更新履歴は[releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)で確認できます。
 
@@ -81,3 +74,4 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 ## 🤝 貢献者
 
 このプロジェクトを可能にしてくれた全ての貢献者に感謝します。
+```
