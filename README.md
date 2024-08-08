@@ -1,33 +1,3 @@
-# 🚀 IRIS v7.3.0 リリースノート
-
-## 📋 概要
-
-IRIS v7.3.0 は、ドキュメントの改善とコードの整理に焦点を当てたリリースです。このバージョンでは、英語のREADMEの内容を大幅に改善し、ユーザーエクスペリエンスを向上させました。さらに、翻訳ワークフローを調整し、翻訳の実行者を明確化することで、ワークフローの透明性を高めました。
-
-## ✨ 新機能
-- 🎉  なし
-
-## 🛠 改善点
-- 🚀 **英語READMEの内容を大幅に改善** (commit: cc18558)
-- 🚀 **翻訳ワークフローの実行者の情報を修正** (commit: 26c3051)
-
-## 🐛 バグ修正
-- 🐛  なし
-
-## ⚠️ 重要な変更
-- ⚠️  なし
-
-## 📦 アップグレード手順
-- アップグレード手順はありません。
-
-## 👏 謝辞
-
-このリリースへの貢献に感謝します。
-
-- iris-s-coon 
-- Maki
-
----
 
 # 🚀 IRIS_Alpha_DEMO
 
@@ -37,7 +7,7 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 [![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-7.3.0-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
+[![Version](https://img.shields.io/badge/version-8.1.0-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
 
 ## 🌟 主な機能
 
@@ -105,5 +75,6 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 ## 🤝 貢献者
 
 このプロジェクトを可能にしてくれた全ての貢献者に感謝します。
+```
 ```
 ```
