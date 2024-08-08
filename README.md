@@ -1,37 +1,82 @@
-# Project: IRIS_Alpha_DEMO
+# IRIS_Alpha_DEMO
 
-このリポジトリは、画像分析、自然言語処理、およびフィボナッチ数列を扱う、インタラクティブなPythonプロジェクトです。
+![Project Logo](https://raw.githubusercontent.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/main/docs/release_notes/header_image/release_header_latest.png)
 
-## 主な機能
+IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナッチ数列の概念を融合した革新的なPythonプロジェクトです。数学的な美しさと実用的な応用を組み合わせ、ユーザーに独特な体験を提供します。
 
-- **画像の黄金比分析:**  画像を読み込み、黄金比に基づいて分割線を描画し、主要な被写体が黄金比に沿っているかどうかを分析します。
-- **フィボナッチ数列の計算:** 与えられた項までのフィボナッチ数列を計算します。
-- **フィボナッチ数の判定:** 与えられた数がフィボナッチ数列に含まれるかどうかを判定します。
-- **フィボナッチクイズ:** フィボナッチ数列に関するクイズを出題します。
-- **最も近いフィボナッチ数の検索:** 与えられた数に最も近いフィボナッチ数を検索します。
-- **フィボナッチ螺旋の描画:** フィボナッチ螺旋をグラフ上に描画します。
-- **フィボナッチワードの探索:** フィボナッチワードを生成し、その特性を表示します。
+[![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-6.0.0-green.svg)](https://github.com/yourusername/IRIS_Alpha_DEMO/releases)
 
-## 使用方法
+## 🌟 主な機能
 
-1. リポジトリをクローンします。
-2. `python fibonacci_game.py` を実行します。
-3. 画面の指示に従ってゲームを選択します。
-4. 画像分析機能を利用する場合は、`examples/image_golden_ratio_analyzer.py` を実行し、画像のパスを指定します。
+- 🖼️ **画像の黄金比分析:** 画像を分析し、黄金比に基づいた構図の評価を行います。
+- 🔢 **フィボナッチ数列の計算と探索:** 数列の生成、特定の数の判定、最近接値の検索を行います。
+- 🧠 **インタラクティブなフィボナッチクイズ:** 数列に関する知識を楽しく学べます。
+- 🌀 **フィボナッチ螺旋の可視化:** 美しい数学的パターンをグラフィカルに表現します。
+- 📚 **フィボナッチワードの生成:** 興味深い言語学的パターンを探索します。
 
-## インストール手順
+## 🚀 はじめ方
 
-1. Python 3.9 をインストールします。
-2. 必要なライブラリをインストールします: `pip install -r requirements.txt`
+### 前提条件
 
-## 最新情報
+- Python 3.9
+- pip (Pythonパッケージマネージャー)
 
-- **v6.0.0:**  リリースノートのヘッダー画像生成スクリプトのフォントパス修正、フォントファイル指定の柔軟性向上、リリースノートヘッダー画像生成スクリプトのフォント指定修正など、いくつかの修正と改善が含まれています。詳細については、リリースノートを参照してください。
+### インストール
 
-## ライセンス
+1. リポジトリをクローンします：
+   ```
+   git clone https://github.com/yourusername/IRIS_Alpha_DEMO.git
+   ```
 
-このプロジェクトは、MITライセンスの下で配布されています。詳細については、LICENSEファイルを参照してください。# Last updated: Tue Aug  6 13:36:06 UTC 2024 - Release: v4.0.0 - Run ID: 10267610668
-<!-- Automated update -->
-# Last updated: Mon Aug 12 13:20:04 UTC 2024 - Release: v6.0.0 - Run ID: 10279670475
-<!-- Automated update --># Last updated: Tue Aug  6 14:10:53 UTC 2024 - Release: v6.0.0 - Run ID: 10268165472
-<!-- Automated update -->
+2. プロジェクトディレクトリに移動します：
+   ```
+   cd IRIS_Alpha_DEMO
+   ```
+
+3. 必要なライブラリをインストールします：
+   ```
+   pip install -r requirements.txt
+   ```
+
+### 使用方法
+
+1. メインプログラムを実行します：
+   ```
+   python fibonacci_game.py
+   ```
+
+2. 画面の指示に従って、希望するゲームやツールを選択します。
+
+3. 画像分析機能を使用する場合：
+   ```
+   python examples/image_golden_ratio_analyzer.py
+   ```
+   プロンプトに従って画像パスを入力します。
+
+## 📘 ドキュメンテーション
+
+詳細なドキュメンテーションは[Wikiページ](https://github.com/yourusername/IRIS_Alpha_DEMO/wiki)で確認できます。
+
+## 🛠️ 開発
+
+プロジェクトへの貢献に興味がある方は、[CONTRIBUTING.md](CONTRIBUTING.md)をご覧ください。
+
+## 📅 最新情報
+
+### v6.0.0 (2024年8月12日)
+- リリースノートのヘッダー画像生成スクリプトを改善
+- フォントパスの指定方法を柔軟に変更
+- その他の細かな修正と改善
+
+全ての更新履歴は[releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)で確認できます。
+
+## 📄 ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルをご覧ください。
+
+## 🤝 貢献者
+
+このプロジェクトを可能にしてくれた全ての貢献者に感謝します。
+
