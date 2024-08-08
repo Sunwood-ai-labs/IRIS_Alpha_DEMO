@@ -1,23 +1,30 @@
-# 🚀 IRIS v7.3.0 リリースノート
+# 🚀 IRIS v8.1.0 リリースノート
 
 ## 📋 概要
 
-IRIS v7.3.0 は、ドキュメントの改善とコードの整理に焦点を当てたリリースです。このバージョンでは、英語のREADMEの内容を大幅に改善し、ユーザーエクスペリエンスを向上させました。さらに、翻訳ワークフローを調整し、翻訳の実行者を明確化することで、ワークフローの透明性を高めました。
+IRIS v8.1.0 は、画像分析とカラーパレット抽出機能の強化に焦点を当てたリリースです。このバージョンでは、リリースノートのヘッダー画像から自動的にカラーパレットを抽出する機能を追加し、リリースノートのデザインをさらに魅力的にしました。また、ヘッダー画像生成スクリプトを改善し、スムーズな領域の検出とテキスト配置の最適化を導入することで、より洗練された画像生成を可能にしました。
 
 ## ✨ 新機能
-- 🎉  なし
+
+- 🎉 ヘッダー画像からカラーパレットを自動的に抽出する機能を追加しました。 (commit: 05345ca)
+- 🎉 ヘッダー画像生成スクリプトを改善し、スムーズな領域の検出とテキスト配置の最適化を導入しました。 (commit: b0a12be)
 
 ## 🛠 改善点
-- 🚀 **英語READMEの内容を大幅に改善** (commit: cc18558)
-- 🚀 **翻訳ワークフローの実行者の情報を修正** (commit: 26c3051)
+
+- 🚀 画像処理とカラー分析機能を強化し、自動的に最適なテキスト配置と色を選択するように `generate_header_image` メソッドを改良しました。 (commit: 5d0e1d6)
+- 🚀 色空間の可視化機能を追加しました。 (commit: 5d0e1d6)
+- 🚀 画像処理の柔軟性を向上させるために、 `use_smooth_area` と `target_ratio` パラメータを `generate_header_image` メソッドに追加しました。 (commit: b0a12be)
 
 ## 🐛 バグ修正
-- 🐛  なし
+
+- 🐛 なし
 
 ## ⚠️ 重要な変更
-- ⚠️  なし
+
+- ⚠️ なし
 
 ## 📦 アップグレード手順
+
 - アップグレード手順はありません。
 
 ## 👏 謝辞
@@ -37,7 +44,7 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 [![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-7.3.0-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
+[![Version](https://img.shields.io/badge/version-8.1.0-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
 
 ## 🌟 主な機能
 
@@ -105,5 +112,6 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 ## 🤝 貢献者
 
 このプロジェクトを可能にしてくれた全ての貢献者に感謝します。
+```
 ```
 ```
