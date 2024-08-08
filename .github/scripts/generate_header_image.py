@@ -14,12 +14,14 @@ def generate_header_image(tag: str, output_dir: str, font_name: str):
 
     # タグ付きの画像を生成
     tagged_output_path = os.path.join(output_dir, f"release_header_{tag}.png")
-    image_service.generate_header_image(tag, tagged_output_path, font_name)
+    # image_service.generate_header_image(tag, tagged_output_path, font_name)
+    image_service.generate_header_image(tag, tagged_output_path, font_name, use_smooth_area=True, target_ratio=0.8)
     logger.success(f"タグ付きヘッダー画像を生成しました: {tagged_output_path}")
 
     # 最新版の画像を生成
     latest_output_path = os.path.join(output_dir, "release_header_latest.png")
-    image_service.generate_header_image(tag, latest_output_path, font_name)
+    # image_service.generate_header_image(tag, latest_output_path, font_name)
+    image_service.generate_header_image(tag, tagged_output_path, font_name, use_smooth_area=True, target_ratio=0.8)
     logger.success(f"最新版ヘッダー画像を生成しました: {latest_output_path}")
 
 if __name__ == "__main__":
@@ -37,6 +39,6 @@ if __name__ == "__main__":
     os.makedirs(output_dir, exist_ok=True)
     logger.info(f"出力ディレクトリ: {output_dir}")
     
-    generate_header_image(tag, output_dir, font_name)
+    generate_header_image(tag, output_dir, font_name, font_name, use_smooth_area=True, target_ratio=0.95)
     
     logger.info("画像生成スクリプトが正常に終了しました。")
