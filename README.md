@@ -26,10 +26,12 @@
 
 ## 最新情報
 
-- **v4.0.0:**  画像の黄金比分析機能、リリースノートのヘッダー画像、LiteLLM モデルの更新など、多くの新機能、変更、修正が含まれています。詳細については、リリースノートを参照してください。
+- **v6.0.0:**  リリースノートのヘッダー画像生成スクリプトのフォントパス修正、フォントファイル指定の柔軟性向上、リリースノートヘッダー画像生成スクリプトのフォント指定修正など、いくつかの修正と改善が含まれています。詳細については、リリースノートを参照してください。
 
 ## ライセンス
 
-このプロジェクトは、MITライセンスの下で配布されています。詳細については、LICENSEファイルを参照してください。# Last updated: Tue Aug  6 11:55:54 UTC 2024 - Release: v4.0.0 - Run ID: 10266002591
-<!-- Automated update --># Last updated: Tue Aug  6 13:36:06 UTC 2024 - Release: v4.0.0 - Run ID: 10267610668
+このプロジェクトは、MITライセンスの下で配布されています。詳細については、LICENSEファイルを参照してください。# Last updated: Tue Aug  6 13:36:06 UTC 2024 - Release: v4.0.0 - Run ID: 10267610668
+<!-- Automated update -->
+# Last updated: Mon Aug 12 13:20:04 UTC 2024 - Release: v6.0.0 - Run ID: 10279670475
+<!-- Automated update --># Last updated: Tue Aug  6 14:10:53 UTC 2024 - Release: v6.0.0 - Run ID: 10268165472
 <!-- Automated update -->
