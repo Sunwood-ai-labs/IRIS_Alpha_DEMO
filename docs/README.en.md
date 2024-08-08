@@ -1,14 +1,14 @@
 ## Project: IRIS_Alpha_DEMO
 
-This repository contains an interactive Python project that deals with image analysis, natural language processing, and the Fibonacci sequence.
+This repository is an interactive Python project that deals with image analysis, natural language processing, and the Fibonacci sequence.
 
 ## Main Features
 
-- **Image Golden Ratio Analysis:** Loads an image, draws dividing lines based on the Golden Ratio, and analyzes whether the main subject aligns with the Golden Ratio.
+- **Image Golden Ratio Analysis:** Loads an image, draws dividing lines based on the golden ratio, and analyzes whether the main subject aligns with the golden ratio.
 - **Fibonacci Sequence Calculation:** Calculates the Fibonacci sequence up to a given term.
-- **Fibonacci Number Determination:** Determines whether a given number is part of the Fibonacci sequence.
-- **Fibonacci Quiz:** Presents quizzes about the Fibonacci sequence.
-- **Nearest Fibonacci Number Search:** Finds the closest Fibonacci number to a given number.
+- **Fibonacci Number Check:** Determines whether a given number is part of the Fibonacci sequence.
+- **Fibonacci Quiz:** Presents a quiz about the Fibonacci sequence.
+- **Closest Fibonacci Number Search:** Finds the Fibonacci number closest to a given number.
 - **Fibonacci Spiral Drawing:** Draws a Fibonacci spiral on a graph.
 - **Fibonacci Word Exploration:** Generates Fibonacci words and displays their properties.
 
@@ -16,22 +16,33 @@ This repository contains an interactive Python project that deals with image ana
 
 1. Clone the repository.
 2. Run `python fibonacci_game.py`.
-3. Follow the on-screen instructions to choose a game.
-4. For image analysis features, run `examples/image_golden_ratio_analyzer.py` and specify the image path.
+3. Follow the on-screen instructions to select a game.
+4. To use the image analysis feature, run `examples/image_golden_ratio_analyzer.py` and specify the image path.
 
-## Installation Steps
+## Installation Instructions
 
 1. Install Python 3.9.
-2. Install required libraries: `pip install -r requirements.txt`
+2. Install the necessary libraries: `pip install -r requirements.txt`
 
-## Latest Information
+## Updates
 
-- **v6.0.0:** Includes several fixes and improvements, such as font path corrections for the release note header image generation script, improved flexibility for specifying font files, and font specification corrections in the release note header image generation script. For more details, please refer to the release notes.
+- 🎉 **S3 File Upload:** Added the ability to upload files to S3. You can specify AWS credentials, bucket name, and file path to upload files to S3. Upon successful upload, you will receive the file URL on S3.
+- 🎉 **GitHub CDN Service:** Added the ability to upload files to GitHub CDN. You can obtain the repository ID, release ID, and file path to upload files using the GitHub API. Upon successful upload, you will receive the file URL on CDN.
+- 🎉 **S3 Bucket Public Settings:** Added settings to publish the header image of a private repository on S3. By setting a public read policy on the S3 bucket and disabling the public access block, you can make the files in the S3 bucket publicly accessible.
+
+## Important Changes
+
+- 🔥 **Release Notes Auto-Generation Feature Removed:** The release notes auto-generation feature has been removed in this version.
+- 🗑️ **S3 Upload Processing Removed:** The S3 upload processing has been removed due to the removal of the release notes auto-generation feature.
+- 🗑️ **GitHub CDN Upload Processing Removed:** The GitHub CDN upload processing has been removed due to the removal of the release notes auto-generation feature.
+- 🗑️ **S3 Public Setting Processing Removed:** The S3 public setting processing has been removed due to the removal of the release notes auto-generation feature.
+
+## Documentation
+
+- 📚 [S3 File Upload Documentation](URL)
+- 📚 [GitHub CDN Service Documentation](URL)
+- 📚 [S3 Bucket Public Settings Documentation](URL)
 
 ## License
 
-This project is distributed under the MIT license. For more information, refer to the LICENSE file. # Last updated: Tue Aug  6 13:36:06 UTC 2024 - Release: v4.0.0 - Run ID: 10267610668
-<!-- Automated update -->
-# Last updated: Mon Aug 12 13:20:04 UTC 2024 - Release: v6.0.0 - Run ID: 10279670475
-<!-- Automated update --># Last updated: Tue Aug  6 14:10:53 UTC 2024 - Release: v6.0.0 - Run ID: 10268165472
-<!-- Automated update -->
+This project is distributed under the MIT license. For more information, see the LICENSE file.
