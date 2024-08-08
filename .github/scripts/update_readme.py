@@ -71,11 +71,6 @@ def main():
 
 ---
 
-# 現在のREADME:
-{readme_content}
-
----
-
 # リポジトリのサマリー:
 {repo_summary_content}
 

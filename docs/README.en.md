@@ -1,4 +1,4 @@
-# IRIS_Alpha_DEMO
+## IRIS_Alpha_DEMO
 
 ![Project Logo](https://raw.githubusercontent.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/main/docs/release_notes/header_image/release_header_latest.png)
 
@@ -10,11 +10,11 @@ IRIS_Alpha_DEMO is an innovative Python project that blends image analysis, natu
 
 ## 🌟 Key Features
 
-- 🖼️ **Golden Ratio Analysis of Images:** Analyzes images and provides an assessment of their composition based on the golden ratio.
-- 🔢 **Fibonacci Sequence Calculation and Exploration:** Generates the sequence, determines if a specific number is part of it, and finds the closest value.
-- 🧠 **Interactive Fibonacci Quiz:** Enables users to learn about the Fibonacci sequence in a fun way.
-- 🌀 **Visualization of the Fibonacci Spiral:** Displays the beautiful mathematical pattern graphically.
-- 📚 **Generation of Fibonacci Words:** Explores interesting linguistic patterns.
+- 🖼️ **Image Golden Ratio Analysis:** Analyzes images and evaluates their composition based on the Golden Ratio.
+- 🔢 **Fibonacci Sequence Calculation and Exploration:** Generates the sequence, determines if a given number belongs to it, and finds the nearest value.
+- 🧠 **Interactive Fibonacci Quiz:** Learn about the sequence in a fun and engaging way.
+- 🌀 **Fibonacci Spiral Visualization:** Visually represents the beautiful mathematical patterns.
+- 📚 **Fibonacci Word Generation:** Explores interesting linguistic patterns.
 
 ## 🚀 Getting Started
 
@@ -35,7 +35,7 @@ IRIS_Alpha_DEMO is an innovative Python project that blends image analysis, natu
    cd IRIS_Alpha_DEMO
    ```
 
-3. Install the required libraries:
+3. Install required libraries:
    ```
    pip install -r requirements.txt
    ```
@@ -57,26 +57,26 @@ IRIS_Alpha_DEMO is an innovative Python project that blends image analysis, natu
 
 ## 📘 Documentation
 
-Detailed documentation is available on the [Wiki page](https://github.com/yourusername/IRIS_Alpha_DEMO/wiki).
+Detailed documentation can be found on the [Wiki page](https://github.com/yourusername/IRIS_Alpha_DEMO/wiki).
 
 ## 🛠️ Development
 
-For those interested in contributing to the project, please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
+If you're interested in contributing to the project, please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## 📅 What's New
+## 📅 Release Notes
 
 ### v6.0.0 (August 12, 2024)
-- Improved the header image generation script for release notes
-- Made the font path specification more flexible
-- Other minor fixes and improvements
+- Improved release notes header image generation script.
+- Made font path specification more flexible.
+- Other minor fixes and improvements.
 
-All update history can be found in [releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases).
+You can find all release history on [releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases).
 
 ## 📄 License
 
-This project is released under the MIT license. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributors
 
-Thanks to all contributors who made this project possible.
+Thanks to all contributors who have made this project possible.
 ```
