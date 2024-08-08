@@ -33,7 +33,7 @@ if __name__ == "__main__":
     logger.info(f"使用するタグ: {tag}")
     logger.info(f"使用するフォント: {font_name}")
     
-    output_dir = os.path.join(settings.RELEASE_NOTES_DIR, "header_image")
+    output_dir = os.path.join(settings.RELEASE_NOTES_DIR, "header_image").replace(".github", "docs")
     os.makedirs(output_dir, exist_ok=True)
     logger.info(f"出力ディレクトリ: {output_dir}")
     

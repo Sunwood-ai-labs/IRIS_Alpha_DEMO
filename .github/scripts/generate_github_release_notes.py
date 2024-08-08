@@ -2,6 +2,7 @@ import os
 import sys
 import subprocess
 import yaml
+import requests
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -9,6 +10,7 @@ from loguru import logger
 from config import get_settings
 from services.llm_service import LLMService
 from services.github_service import GitHubService
+# from services.s3_upload_service import S3UploadService
 
 def run_command(cmd):
     logger.info(f"実行コマンド: {cmd}")
@@ -85,6 +87,38 @@ def save_release_notes(release_notes, latest_tag):
         logger.error(f"リリースノートの保存中にエラーが発生しました: {str(e)}")
         return None
 
+def get_header_image_url(latest_tag):
+    settings = get_settings()
+    header_image_url = f"https://raw.githubusercontent.com/{settings.GITHUB_REPOSITORY}/main/docs/release_notes/header_image/release_header_{latest_tag}.png"
+    
+    logger.info(f"ヘッダー画像URLを確認: {header_image_url}")
+
+    try:
+        response = requests.head(header_image_url)
+        if response.status_code == 200:
+            logger.info(f"ヘッダー画像URLは有効です: {header_image_url}")
+            return header_image_url
+        else:
+            logger.warning(f"ヘッダー画像URLが無効です。ステータスコード: {response.status_code}")
+    except requests.RequestException as e:
+        logger.error(f"ヘッダー画像URLの確認中にエラーが発生しました: {str(e)}")
+
+    # GitHubのURLが無効な場合、S3にアップロード
+    # logger.info("S3に画像をアップロードします")
+    # s3_service = S3UploadService()
+    # local_image_path = f"docs/release_notes/header_image/release_header_{latest_tag}.png"
+    # if os.path.exists(local_image_path):
+    #     s3_url = s3_service.upload_file_to_s3(local_image_path)
+    #     if s3_url:
+    #         logger.info(f"画像をS3にアップロードしました。URL: {s3_url}")
+    #         return s3_url
+    #     else:
+    #         logger.error("S3への画像アップロードに失敗しました")
+    # else:
+    #     logger.error(f"ローカルの画像ファイルが見つかりません: {local_image_path}")
+
+    return None
+
 def main():
     logger.info("GitHub リリースノート生成プロセスを開始します。")
     
@@ -94,15 +128,18 @@ def main():
 
     latest_tag = os.getenv('LATEST_TAG', '')
     
-    # ヘッダー画像のURLを生成
-    # header_image_url = os.getenv('HEADER_IMAGE_URL', '')
-    header_image_url = f"https://raw.githubusercontent.com/{settings.GITHUB_REPOSITORY}/main/.github/release_notes/header_image/release_header_{latest_tag}.png"
-    
     if not latest_tag:
         logger.error("環境変数 'LATEST_TAG' が設定されていません。")
         sys.exit(1)
 
     logger.info(f"最新のタグ: {latest_tag}")
+
+    header_image_url = get_header_image_url(latest_tag)
+    
+    if header_image_url:
+        logger.info(f"ヘッダー画像URL: {header_image_url}")
+    else:
+        logger.warning("有効なヘッダー画像URLが見つかりません。ヘッダー画像なしで続行します。")
 
     run_sourcesage()
     update_yaml_file(latest_tag)
@@ -117,8 +154,6 @@ def main():
     if not release_notes_path:
         logger.error("リリースノートの保存に失敗しました。プロセスを終了します。")
         sys.exit(1)
-
-
 
     try:
         github_service.create_release(latest_tag, release_notes, header_image_url)
