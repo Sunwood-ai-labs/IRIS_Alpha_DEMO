@@ -1,3 +1,40 @@
+# 🚀 IRIS v7.1.0 リリースノート
+
+## 📋 概要
+
+IRIS v7.1.0 は、ドキュメントの改善とコードの整理に重点を置いたリリースです。このバージョンでは、READMEの構造と内容を大幅に改善し、ユーザーエクスペリエンスを向上させました。また、リリースノートの自動生成機能を削除し、関連するコードを整理することで、プロジェクトの保守性を向上させています。
+
+## ✨ 新機能
+- 🎉  **S3 ファイルアップロード:** S3 にファイルをアップロードする機能を追加しました。AWS 認証情報、バケット名、ファイルパスを指定して、ファイルを S3 にアップロードできます。アップロードが成功すると、S3 上のファイル URL を取得できます。
+- 🎉 **GitHub CDN サービス:** GitHub CDN にファイルをアップロードする機能を追加しました。リポジトリ ID、リリース ID、ファイルパスを取得して、GitHub API を使用してファイルをアップロードします。アップロードが成功すると、CDN 上のファイル URL を取得できます。
+- 🎉 **S3 バケットの公開設定:** プライベートリポジトリのヘッダー画像を S3 で公開するための設定を追加しました。S3 バケットに公開読み取りポリシーを設定し、パブリックアクセスブロックを無効化することで、S3 バケット内のファイルを公開してアクセスできるようにしました。
+
+## 🛠 改善点
+- 🚀  **READMEの構造と内容を大幅に改善** 
+- 🚀  **リリースノートの自動生成機能を削除**
+
+## 🐛 バグ修正
+- 🐛  **READMEの自動更新処理を一時的に無効化** 
+
+## ⚠️ 重要な変更
+- 🔥 **リリースノート自動生成機能削除:** リリースノート自動生成機能は、このバージョンで削除されました。
+- 🗑️ **S3 アップロード処理削除:** リリースノート自動生成機能の削除に伴い、S3 へのアップロード処理が削除されました。
+- 🗑️ **GitHub CDN アップロード処理削除:** リリースノート自動生成機能の削除に伴い、GitHub CDN へのアップロード処理が削除されました。
+- 🗑️ **S3 公開設定処理削除:** リリースノート自動生成機能の削除に伴い、S3 への公開設定処理が削除されました。
+
+## 📦 アップグレード手順
+
+このバージョンへのアップグレード手順は特にありません。
+
+## 👏 謝辞
+このリリースへの貢献に感謝します。
+
+- Maki
+- iris-s-coon 
+- github-actions[bot]
+
+---
+
 # IRIS_Alpha_DEMO
 
 ![Project Logo](https://raw.githubusercontent.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/main/docs/release_notes/header_image/release_header_latest.png)
@@ -6,7 +43,7 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 [![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-6.0.0-green.svg)](https://github.com/yourusername/IRIS_Alpha_DEMO/releases)
+[![Version](https://img.shields.io/badge/version-7.1.0-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
 
 ## 🌟 主な機能
 
@@ -27,7 +64,7 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 1. リポジトリをクローンします：
    ```
-   git clone https://github.com/yourusername/IRIS_Alpha_DEMO.git
+   git clone https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO.git
    ```
 
 2. プロジェクトディレクトリに移動します：
@@ -57,7 +94,7 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 ## 📘 ドキュメンテーション
 
-詳細なドキュメンテーションは[Wikiページ](https://github.com/yourusername/IRIS_Alpha_DEMO/wiki)で確認できます。
+詳細なドキュメンテーションは[Wikiページ](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/wiki)で確認できます。
 
 ## 🛠️ 開発
 
@@ -65,9 +102,10 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 ## 📅 最新情報
 
-### v6.0.0 (2024年8月12日)
-- リリースノートのヘッダー画像生成スクリプトを改善
-- フォントパスの指定方法を柔軟に変更
+### v7.1.0 (2024年8月12日)
+- READMEの構造と内容を大幅に改善
+- リリースノートの自動生成機能を削除
+- READMEの自動更新処理を一時的に無効化
 - その他の細かな修正と改善
 
 全ての更新履歴は[releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)で確認できます。
