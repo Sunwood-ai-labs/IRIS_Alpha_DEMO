@@ -65,8 +65,8 @@ jobs:
           mkdir -p .github/release_notes/assets
           ls -la .github/release_notes/assets
 
-          mkdir -p .github/release_notes/header_image
-          ls -la .github/release_notes/header_image
+          mkdir -p docs/release_notes/header_image
+          ls -la docs/release_notes/header_image
           
       - name: SourceSage の実行
         run: |
@@ -84,14 +84,14 @@ jobs:
         run: |
           git config --global user.name "iris-s-coon"
           git config --global user.email "iris.sol.coon@gmail.com"
-          git add .github/release_notes/header_image/release_header_${{ steps.get_tag.outputs.LATEST_TAG }}.png
-          git add .github/release_notes/header_image/release_header_latest.png
-          git commit -m "Add release header images for ${{ steps.get_tag.outputs.LATEST_TAG }}"
+          git add docs/release_notes/header_image/release_header_${{ steps.get_tag.outputs.LATEST_TAG }}.png
+          git add docs/release_notes/header_image/release_header_latest.png
+          git commit -m "🖼 ヘッダー画像の更新: ${{ steps.get_tag.outputs.LATEST_TAG }}"
           git push
 
       - name: GitHubリリースノートの生成
         env:
           LATEST_TAG: ${{ steps.get_tag.outputs.LATEST_TAG }}
-          # HEADER_IMAGE_URL: "https://raw.githubusercontent.com/${{ github.repository }}/main/.github/release_notes/header_image/release_header_${{ steps.get_tag.outputs.LATEST_TAG }}.png"
+          # HEADER_IMAGE_URL: "https://raw.githubusercontent.com/${{ github.repository }}/main/docs/release_notes/header_image/release_header_${{ steps.get_tag.outputs.LATEST_TAG }}.png"
         run: |
           python .github/scripts/generate_github_release_notes.py
