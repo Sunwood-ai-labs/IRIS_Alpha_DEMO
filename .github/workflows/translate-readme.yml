@@ -49,8 +49,8 @@ jobs:
       - name: 変更の確認とコミット
         id: check_changes
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name "iris-s-coon"
+          git config --global user.email "iris.sol.coon@gmail.com"
           git add docs/README.en.md
           if git diff --staged --quiet; then
             echo "変更はありません。"
