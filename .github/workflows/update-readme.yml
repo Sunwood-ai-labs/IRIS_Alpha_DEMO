@@ -54,8 +54,9 @@ jobs:
         run: |
           sourcesage --ignore-file=".github/repository_summary/.iris.SourceSageignore"
           python .github/scripts/update_readme.py
-          echo "# Last updated: $(date) - Release: ${{ github.event.release.tag_name }} - Run ID: ${{ github.run_id }}" >> README.md
-          echo "<!-- Automated update -->" >> README.md
+          # echo ">[!NOTE]" >> README.md
+          # echo ">Last updated: $(date) - Release: ${{ github.event.release.tag_name }} - Run ID: ${{ github.run_id }}" >> README.md
+          # echo "<!-- Automated update -->" >> README.md
 
       - name: Gitユーザー設定
         run: |
