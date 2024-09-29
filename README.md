@@ -6,7 +6,8 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 [![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-8.2.0-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
+[![Version](https://img.shields.io/badge/version-0.8.3-green.svg)](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)
+
 
 ## 🌟 主な機能
 
@@ -16,12 +17,14 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 - 🌀 **フィボナッチ螺旋の可視化:** 美しい数学的パターンをグラフィカルに表現します。
 - 📚 **フィボナッチワードの生成:** 興味深い言語学的パターンを探索します。
 
+
 ## 🚀 はじめ方
 
 ### 📦 前提条件
 
 - Python 3.9
 - pip (Pythonパッケージマネージャー)
+
 
 ### 📦 インストール
 
@@ -37,8 +40,9 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
 
 3. 必要なライブラリをインストールします：
    ```
-   pip install -r requirements.txt
+   pip install -r requirements.txt 
    ```
+
 
 ## 🔧 使用方法
 
@@ -55,25 +59,21 @@ IRIS_Alpha_DEMOは、画像分析、自然言語処理、およびフィボナ�
    ```
    プロンプトに従って画像パスを入力します。
 
-## 📘 ドキュメンテーション
-
-詳細なドキュメンテーションは[Wikiページ](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/wiki)で確認できます。
-
-## 🛠️ 開発
-
-プロジェクトへの貢献に興味がある方は、[CONTRIBUTING.md](CONTRIBUTING.md)をご覧ください。
 
 ## 🆕 最新情報
 
-- 🎉 新しい機能はありません。
-- 🚀 英語READMEの内容を大幅に改善 (commit: cc18558)
-- 🚀 翻訳ワークフローの実行者の情報を修正 (commit: 26c3051)
+- IRIS v0.8.3 は、AIモデルの更新、ドキュメントの改善、および不要なコードの削除を含む、いくつかのマイナーな変更と改善を含むリリースです。これらの変更により、IRISの安定性と使い勝手が向上しています。
+- 🚀 英語READMEの内容を大幅に改善
+- 🚀 翻訳ワークフローの実行者の情報を修正
+
 
 全ての更新履歴は[releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases)で確認できます。
+
 
 ## 📄 ライセンス
 
 このプロジェクトはMITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルをご覧ください。
+
 
 ## 🤝 貢献者
 
