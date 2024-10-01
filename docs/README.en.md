@@ -2,7 +2,7 @@
 
 ![Project Logo](https://raw.githubusercontent.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/main/docs/release_notes/header_image/release_header_latest.png)
 
-IRIS_Alpha_DEMO is an innovative Python project that fuses the concepts of image analysis, natural language processing, and the Fibonacci sequence. It combines mathematical beauty with practical applications, offering a unique experience to users.
+IRIS_Alpha_DEMO is an innovative Python project that fuses the concepts of image analysis, natural language processing, and the Fibonacci sequence. Combining mathematical beauty with practical applications, it offers users a unique experience.
 
 [![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -11,14 +11,14 @@ IRIS_Alpha_DEMO is an innovative Python project that fuses the concepts of image
 
 ## ✨ Main Features
 
-- 🖼️ **Image Golden Ratio Analysis:** Analyzes images and evaluates their composition based on the Golden Ratio.
+- 🖼️ **Golden Ratio Analysis of Images:** Analyzes images and evaluates their composition based on the Golden Ratio.
 - 🔢 **Fibonacci Sequence Calculation and Exploration:** Generates the sequence, determines if a number is part of the sequence, and finds the closest value in the sequence.
-- 🧠 **Interactive Fibonacci Quiz:** Offers a fun way to learn about the sequence.
-- 🌀 **Fibonacci Spiral Visualization:** Graphically represents the beautiful mathematical pattern.
+- 🧠 **Interactive Fibonacci Quiz:**  Provides a fun way to learn about the sequence.
+- 🌀 **Fibonacci Spiral Visualization:**  Graphically represents this beautiful mathematical pattern.
 - 📚 **Fibonacci Word Generation:** Explores interesting linguistic patterns.
 
 
-## 🔧 How to Use
+## 🔧 Usage
 
 1. Run the main program:
    ```
@@ -51,17 +51,44 @@ IRIS_Alpha_DEMO is an innovative Python project that fuses the concepts of image
    pip install -r requirements.txt 
    ```
 
+## 🚀 Setup Using uv
 
-## 🆕 Latest Updates
+uv is a fast Python package installer and virtual environment manager. You can set up the project using uv by following these steps:
 
-- IRIS v0.8.4 includes several improvements, including updates to the LLM model, README improvements, and header image updates. These changes contribute to enhancing IRIS's overall performance and user experience.
+1. Install uv (if you haven't already):
+   ```
+   pip install uv
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd IRIS_Alpha_DEMO
+   ```
+
+3. Create and activate a virtual environment using uv:
+   ```
+   uv venv
+   uv venv activate
+   ```
+
+4. Install dependencies using uv:
+   ```
+   uv pip install -r requirements.txt
+   ```
+
+Now you have set up the project environment and installed dependencies using uv.
+
+
+## 🆕 What's New
+
+- IRIS v0.8.4 brings several improvements, including an updated LLM model, improved README, and an updated header image. These changes contribute to enhancing the overall performance and user experience of IRIS.
 - 🚀 Updated the LLM model used from `gemini/gemini-1.5-flash-exp-0827` to `gemini/gemini-1.5-pro-exp-0827`.
-- 🚀 Significantly improved the content of the English README.
-- 🚀 Corrected the information of the translator in the translation workflow.
+- 🚀 Significantly improved the English README content.
+- 🚀 Corrected the information of the translation workflow executor.
 - 🚀 Updated the header image.
 
 
-A full changelog can be found at [releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases).
+See the full changelog in [releases](https://github.com/Sunwood-ai-labs/IRIS_Alpha_DEMO/releases).
 
 
 ## 📄 License
@@ -71,7 +98,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Contributors
 
-Thanks to the following people who contributed to this release:
+Thanks to these people for contributing to this release:
 
 - iris-s-coon 
 - Maki
